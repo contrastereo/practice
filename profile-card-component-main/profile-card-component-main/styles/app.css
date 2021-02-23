@@ -1,0 +1,87 @@
+/*DEFAULT CSS*/
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: hsl(228, 45%, 44%); }
+/*RESETS (SOURCE: https://www.digitalocean.com/community/tutorials/css-minimal-css-reset) */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  ol, ul {
+    list-style: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+/* MY STYLING */
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-image: url(../images/bg-pattern-bottom.svg);
+    background-color: hsl(185, 75%, 39%);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.container{
+  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  
+  }
+#profileCard{
+  align-self: center;
+  height: 375px;
+  width: 350px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  /* inner flex*/
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.main{
+  height: 100%;
+  text-align: center;
+}
+.statics{
+  width: 100%;
+  height: 90px;
+  display: flex;
+  
+  justify-content: space-around;
+
+}
+#avatar{
+  border-radius: 100%;
+  border: white 2px solid;
+} 
+ul{
+  
+  text-align: center;
+
+}
+.nums{
+  font-weight: 700;
+}
+.userData{
+  font-size: 10px ;
+}
+
+.attribution{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
