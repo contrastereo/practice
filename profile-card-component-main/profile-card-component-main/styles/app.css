@@ -29,7 +29,6 @@ body{
     min-height: 100vh;
     min-width: 100vw;
 }
-
 .container{
   
   min-height: 100vh;
@@ -37,49 +36,84 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
-  
   }
+/* PROFILE CARD DIV*/
 #profileCard{
   align-self: center;
   height: 375px;
   width: 350px;
   background-color: hsl(0, 0%, 100%);
   border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   /* inner flex*/
   display: flex;
   flex-direction: column;
   align-items: stretch;
   justify-content: space-between;
 }
+/* USER PROFILE */
 .main{
   height: 100%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /*PROFILE CARD BACKGROUND PROPERTIES*/
+  background-image: url(../images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: auto 50%;
+  background-position: top;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
+#avatar{
+  margin-top: 27%;
+  border-radius: 100%;
+  border: white 5px solid;
+} 
+.info{
+  text-align: center;
+  margin-top: 20px;
+}
+.info h1{
+  font-weight: 700;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
+}
+.info h1 span{
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+}
+.info h2 {
+  margin-top: 10px;
+  color: hsl(227, 10%, 46%);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+/*  STATS  */
 .statics{
   width: 100%;
   height: 90px;
   display: flex;
-  
   justify-content: space-around;
-
+  align-items: center;
+  border-top: 1px solid hsl(227, 10%, 46%, 0.15);
 }
-#avatar{
-  border-radius: 100%;
-  border: white 2px solid;
-} 
-ul{
-  
-  text-align: center;
 
+.dataSets{  
+  text-align: center;
 }
 .nums{
   font-weight: 700;
+  font-size: 18px;
+  color: hsl(229, 23%, 23%);
 }
 .userData{
   font-size: 10px ;
+  color: hsl(227, 10%, 46%)
 }
-
 .attribution{
   position: absolute;
   bottom: 0;
