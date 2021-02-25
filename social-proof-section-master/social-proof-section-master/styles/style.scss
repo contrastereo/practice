@@ -1,0 +1,94 @@
+/*DEFAULT SETUP*/
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+  }
+
+  /*RESETS (SOURCE: https://www.digitalocean.com/community/tutorials/css-minimal-css-reset) */
+  html {
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    *, *:before, *:after {
+      box-sizing: inherit;
+    }
+    body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+      margin: 0;
+      padding: 0;
+      font-weight: normal;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    /*MY STYLES */
+  body{
+      font-family: 'Spartan', sans-serif;
+      height: 100vh;
+      background-image: url(images/bg-pattern-top-desktop.svg);
+  }
+  .container{
+      margin: 0 auto;
+      height: 100vh;
+      width: 70vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  .top {
+      display: flex;
+  
+  }
+  .info{
+      width: 50%;
+  }
+  .rating{
+      width: auto;
+  }
+  h1{
+  
+      font-weight: 700;
+  }
+  .reviews{
+      display: flex;
+
+      .review{
+
+        background-color: hsl(300, 43%, 22%);
+        border-radius: 10px;
+        padding: 30px;
+        height: 230px;
+        font-weight: 300;
+        font-size: 12px;
+        img{
+          border-radius: 100%;
+          width: 40px;
+          margin-right: 10px;
+      };
+      .userData{
+          display: flex;
+          margin-bottom: 10px;
+      };
+      .userReview{
+          color: white;    
+      };
+      .role{    
+          color: hsl(333, 80%, 67%);
+      };
+      .textReview{
+          color:  hsl(300, 24%, 96%);
+      };
+    }
+  
+  };
+  .reviews:nth-child(3){
+      margin-left: 30px;
+      margin-top: 15px;
+  }
