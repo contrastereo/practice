@@ -1,3 +1,6 @@
+$primary : hsl(300, 43%, 22%);
+$softMagenta hsl(303, 10%, 53%);
+
 /*DEFAULT SETUP*/
 .attribution {
     font-size: 11px;
@@ -31,7 +34,7 @@
   body{
       font-family: 'Spartan', sans-serif;
       height: 100vh;
-      background-image: url(images/bg-pattern-top-desktop.svg);
+      background-image: url(../images/bg-pattern-top-desktop.svg);
   }
   .container{
       margin: 0 auto;
@@ -44,51 +47,67 @@
   }
   .top {
       display: flex;
-  
+    margin-bottom: 75px;
+
   }
   .info{
       width: 50%;
+      color: $primary;
+      & h1{
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
   }
-  .rating{
+  .ratings{
       width: auto;
+      & li {
+        padding: 20px 30px;
+        margin-bottom: 15px;
+        background-color: $softMagenta;
+
+      }
   }
-  h1{
-  
-      font-weight: 700;
-  }
-  .reviews{
+
+ .reviews{
       display: flex;
 
-      .review{
+      & .review{
 
-        background-color: hsl(300, 43%, 22%);
+        background-color:  $primary;
         border-radius: 10px;
         padding: 30px;
         height: 230px;
         font-weight: 300;
         font-size: 12px;
-        img{
+
+        & img{
           border-radius: 100%;
           width: 40px;
           margin-right: 10px;
       };
-      .userData{
+      & .userData{
           display: flex;
           margin-bottom: 10px;
       };
-      .userReview{
+      & .userReview{
           color: white;    
       };
-      .role{    
+      & .role{    
           color: hsl(333, 80%, 67%);
       };
-      .textReview{
+      & .textReview{
           color:  hsl(300, 24%, 96%);
       };
+      &:nth-child(2){
+          margin-left: 30px;
+          margin-top: 15px;
+      }
+      &:nth-child(3){
+          margin-left: 30px;
+          margin-top: 30px;
+      }
+      
     }
   
   };
-  .reviews:nth-child(3){
-      margin-left: 30px;
-      margin-top: 15px;
-  }
