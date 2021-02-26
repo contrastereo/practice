@@ -1,5 +1,5 @@
 $primary : hsl(300, 43%, 22%);
-$softMagenta hsl(303, 10%, 53%);
+$softMagenta :hsl(300, 24%, 96%);
 
 /*DEFAULT SETUP*/
 .attribution {
@@ -35,7 +35,8 @@ $softMagenta hsl(303, 10%, 53%);
       font-family: 'Spartan', sans-serif;
       height: 100vh;
       background-image: url(../images/bg-pattern-top-desktop.svg);
-  }
+      line-height: 1.5
+      }
   .container{
       margin: 0 auto;
       height: 100vh;
@@ -54,21 +55,45 @@ $softMagenta hsl(303, 10%, 53%);
       width: 50%;
       color: $primary;
       & h1{
-        font-size: 42px;
+        font-size: 45px;
+        line-height: 1;
         font-weight: 700;
         margin-bottom: 15px;
     }
   }
   .ratings{
-      width: auto;
+      width: 50%;
       & li {
         padding: 20px 30px;
         margin-bottom: 15px;
         background-color: $softMagenta;
+        border-radius: 10px;
+        font-weight: 700;
+        color: $primary;
+        font-size: 14px;
+        width: 445px;
+        display: flex;
+        align-content: center;
+        & span{
+          margin-right: 30px;
+        }
+      }
+      & .stars{
+        & img{
+          display: inline-block;
+        }
 
       }
-  }
+      
 
+  }
+  .second{
+    margin-left: 50px;
+}
+  .third{
+  margin-left: 100px;
+
+}
  .reviews{
       display: flex;
 
@@ -76,11 +101,15 @@ $softMagenta hsl(303, 10%, 53%);
 
         background-color:  $primary;
         border-radius: 10px;
-        padding: 30px;
+        padding-left:30px;
+        padding-right: 30px;
         height: 230px;
+        width: 340px;
         font-weight: 300;
         font-size: 12px;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
         & img{
           border-radius: 100%;
           width: 40px;
@@ -88,16 +117,19 @@ $softMagenta hsl(303, 10%, 53%);
       };
       & .userData{
           display: flex;
-          margin-bottom: 10px;
+          margin-bottom: 25px;
       };
       & .userReview{
           color: white;    
+          font-weight: 700;
       };
       & .role{    
           color: hsl(333, 80%, 67%);
       };
       & .textReview{
           color:  hsl(300, 24%, 96%);
+          
+
       };
       &:nth-child(2){
           margin-left: 30px;

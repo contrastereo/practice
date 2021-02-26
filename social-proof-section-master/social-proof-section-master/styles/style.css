@@ -40,6 +40,7 @@ body {
   font-family: 'Spartan', sans-serif;
   height: 100vh;
   background-image: url(../images/bg-pattern-top-desktop.svg);
+  line-height: 1.5;
 }
 
 .container {
@@ -74,19 +75,46 @@ body {
 }
 
 .info h1 {
-  font-size: 42px;
+  font-size: 45px;
+  line-height: 1;
   font-weight: 700;
   margin-bottom: 15px;
 }
 
 .ratings {
-  width: auto;
+  width: 50%;
 }
 
 .ratings li {
   padding: 20px 30px;
   margin-bottom: 15px;
   background-color: #f7f2f7;
+  border-radius: 10px;
+  font-weight: 700;
+  color: #502050;
+  font-size: 14px;
+  width: 445px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.ratings li span {
+  margin-right: 30px;
+}
+
+.ratings .stars img {
+  display: inline-block;
+}
+
+.second {
+  margin-left: 50px;
+}
+
+.third {
+  margin-left: 100px;
 }
 
 .reviews {
@@ -98,10 +126,21 @@ body {
 .reviews .review {
   background-color: #502050;
   border-radius: 10px;
-  padding: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
   height: 230px;
+  width: 340px;
   font-weight: 300;
   font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reviews .review img {
@@ -114,11 +153,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
 }
 
 .reviews .review .userReview {
   color: white;
+  font-weight: 700;
 }
 
 .reviews .review .role {
